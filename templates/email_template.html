@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    Hello {{ user_name }},
+    <p>
+        This is a demonstration of rendering a template file outside of a standard web framework.<br />
+        This sample uses a Layout, a partial, a passed-in Model, and a service injection.
+
+        {% include 'email_partial.html' %}
+    </p>
+{% endblock %}
